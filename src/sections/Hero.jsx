@@ -14,8 +14,8 @@ export const Hero = () => {
     return(
         <Container as="section" id="home" className="min-h-dvh flex items-center justify-center relative">
             <video src={heroVideo} muted autoPlay loop 
-                   className="opacity-35 w-full h-full object-cover absolute top-0"
-                   onCanPlay={(e) => e.currentTarget.playbackRate = .5}
+                   className="opacity-55 w-full h-full object-cover absolute top-0"
+                   onCanPlay={(e) => e.currentTarget.playbackRate = .75}
             ></video>
             <div className="flex flex-col gap-4 items-center text-center absolute">
                 <img src={logo} alt="Logo X TKJ"
