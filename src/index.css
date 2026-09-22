@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+@theme {
+    --cursor-auto-custom: url('./assets/img/cursors/auto.png') 0 0, auto;
+    --cursor-pointer-custom: url('./assets/img/cursors/pointer.png') 0 0, pointer;
+
+    --background-image-hero-pattern: linear-gradient(var(--color-elevated-half), var(--color-elevated-half)), url('./assets/img/bg/hero.webp');
+
+    --color-surface: hsla(222, 50%, 7%);
+    --color-elevated-1: hsla(222, 50%, 16%, 1);
+    --color-elevated-2: hsla(222, 49%, 32%, 1);
+    --color-elevated-3: hsla(222, 49%, 48%, 1);
+    --color-elevated-4: hsla(222, 49%, 64%, 1);
+
+    --color-elevated-half: hsla(222, 50%, 10%, .8);
+
+    --font-primary: "Rubik", system-ui;
+    --font-secondary: "Press Start 2P", system-ui;
+
+    --breakpoint-xs: 30rem;
+    --breakpoint-xxs: 22rem;
+}
+
+*{
+    cursor: var(--cursor-auto-custom);
+}
+
+html{
+    color-scheme: dark;
+}
+
+body{
+    background: var(--color-surface);
+    font-family: var(--font-primary);
+}
+
+a, button{
+    cursor: var(--cursor-pointer-custom);
+}
